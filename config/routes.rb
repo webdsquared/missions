@@ -1,4 +1,6 @@
 Missions::Application.routes.draw do
+  resources :categories
+
   mount RedactorRails::Engine => '/redactor_rails'
 
   resources :posts
