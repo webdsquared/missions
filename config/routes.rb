@@ -1,4 +1,6 @@
 Missions::Application.routes.draw do
+  resources :churches
+
   resources :categories
 
   mount RedactorRails::Engine => '/redactor_rails'
