@@ -1,4 +1,6 @@
 Missions::Application.routes.draw do
+  resources :blogs
+
   get "pages/home"
 
   get "pages/about"
