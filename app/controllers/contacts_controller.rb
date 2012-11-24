@@ -25,6 +25,8 @@ class ContactsController < ApplicationController
   # GET /contacts/new.json
   def new
     @contact = Contact.new
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
 
     respond_to do |format|
       format.html # new.html.erb

@@ -1,2 +1,47 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<%= provide(:title, "About Us") %>		
+<%= render "partials/hdr" %>
+
+<div class="pg-container bg-white">
+	
+	<div class="container">
+		<div id="secondary-pg-title">
+			<div class="row">
+				<div class="span1">
+					<%= image_tag("uk-map.jpg", size: "66x100") %>
+				</div>
+				<div class="span11">
+					<h2 class="sec-title">A little more of our story...</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="about-pg">
+			<div class="row">
+				<div class="span8">
+					<h3 class="about-page">Unlikely Missionaries</h3>
+					<p>We are unlikely missionaries. But as we were approaching an empty nest, God began to take us on a journey of adventure and even deeper dependence on him. In January 2012, Bing badly broke his knee, spending several months unable to walk while recoving.</p>
+					<p>With plenty of time to think and pray, and an 'accidental encounter' with a missionary during that time, we found our hearts being curiously drawn to cross-cultural ministry for the first time ever. After eight months of process with Mission To the World (MTW), we find ourselves fully approved and headed to the mission field.</p>
+					<p>Would you consider partnering with us?</p>
+					<p><%= link_to "Learn More", pages_support_path, class: "btn btn-small" %></p>
+					<br>
+					<div id="partnering-list">
+						<h4>Parterning Churches:</h4>
+						<ul>
+							<li><%= link_to "Parish Presbyterian - Franklin, TN", "http://parishpres.org", target: "_blank" %></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span4">
+					<div id="about-img-container">
+						<%= image_tag "bing-stacy-2.jpg" %>	
+						<div id="about-contact">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%= render "partials/ftr" %>	

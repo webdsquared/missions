@@ -1,2 +1,66 @@
-<h1>Pages#support</h1>
-<p>Find me in app/views/pages/support.html.erb</p>
+<%= provide(:title, "Support") %>		
+<%= render "partials/hdr" %>
+<div class="pg-container bg-white">
+	
+	
+	<div class="container">
+		<div id="secondary-pg-title">
+			<div class="row">
+				<div class="span1">
+					<%= image_tag("uk-map.jpg", size: "66x100") %>
+				</div>
+				<div class="span11">
+					<h2 class="sec-title">How can you partner with us?</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="mtw">
+			<div class="row">
+				<div class="span5">
+					<%= image_tag "mtw-bw.jpg" %>
+				</div>
+				<div class="span6 offset1 mtw-text-pad">
+					<blockquote class="red">"MTW believes that the Church is God's 	instrument to complete the missionary task. Ours 	approach is to advance movements of the gospel 	through the planting of self-propogating, self-	supporting, and self-governing churches, which 	live out a dynamic Reformed and covenantal faith 	through trained and empowered leadership."</blockquote>
+				</div>
+			</div>
+		</div>
+		<div id="support-text">
+			<div class="row">
+				<div class="span6">
+
+			<p>This London project is an opportunity for all to partner in the work of the kingdom, a chance to invest in spreading the gospel to "the nations" that congregate in London.</p>
+			<p>We have significant one-time and ongoing financial needs, but we know that God has gone before us and raised a team of partners. Are you one of those partners?</p>
+			<p>If so, please go to <%= link_to "www.mtw.org", "http://mtw.org", target: "_blank" %> and click on "DONATE NOW".</p>
+			<p>You can also mail a check to:</p>
+			<address>
+				<strong>Mission to the World</strong><br>
+				P.O. Box 116284<br>
+				Atlanta, GA 30368-6284<br>
+				<strong>Reference Support Account #118877</strong>
+			</address>
+			
+				</div>
+				<div class="span6">
+					<%= image_tag "post-picture.jpg" %>		
+				</div>
+
+			</div>
+
+			<p>You can also click on the image below to print off an e-giving card.</p>
+
+			<div class="row">
+				<div class="span6">
+					<h4>E-giving Card</h4>
+					<%= link_to image_tag("mtw-eginving-card.jpg"), "/assets/davis-eft-form.jpg", target: "_blank" %>
+				</div>
+				<div class="span6">
+					&nbsp;	
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>	
+<%= render "partials/ftr" %>			

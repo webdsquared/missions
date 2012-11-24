@@ -1,5 +1,84 @@
-<h1>New contact</h1>
+<%= provide(:title, "Contact") %>
+<%= render "partials/hdr" %>	
+<div class="pg-container bg-white">
 
-<%= render 'form' %>
+	<div class="container">
+		<div id="secondary-pg-title">
+			<div class="row">
+				<div class="span1">
+					<%= image_tag("uk-map.jpg", size: "66x100") %>
+				</div>
+				<div class="span11">
+					<h2 class="sec-title">Want to get in touch?</h2>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<%= link_to 'Back', contacts_path %>
+	<div id="contact-pg">
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					<%= form_for(@contact) do |f| %>
+					<div class="row">
+						<div class="span4">
+							<label>First Name</label>
+  						<%= f.text_field :first_name %>
+						</div>
+						<div class="span4">
+							<label>Last Name</label>
+  						<%= f.text_field :last_name %>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="span4">
+							<label>Email</label>
+  						<%= f.text_field :email %>
+						</div>
+						<div class="span4">
+							<label>Phone</label>
+  						<%= f.text_field :phone %>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="span4">
+							<label>Church/Ministry</label>
+  						<%= f.text_field :church %>
+						</div>
+					</div>
+
+					<div id="contact-text-area">
+						<label>Message</label>
+  					<%= f.text_area :message, rows: 4 %>
+					</div>
+
+				<% end %>
+  				
+ 
+
+			
+				</div>
+				<div class="span4">
+					<h4>Mailing</h4>
+					<address>
+						<strong>Mission To the World</strong><br>
+						P.O. Box 116284<br>
+						Atlanta, GA 30368-6284<br>
+						<strong>Reference Support Account #118877</strong>
+					</address>
+					<h4>Email</h4>
+						<ul class="email-list">
+							<li class="email"><%= mail_to "binginlondon@gmail.com", "binginlondon@gmail.com" %></li>
+							<li class="email"><%= mail_to "stacyinlondon@gmail.com", "stacyinlondon@gmail.com" %></li>
+						</ul>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+<%= render "partials/ftr" %>

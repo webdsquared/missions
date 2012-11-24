@@ -1,0 +1,43 @@
+<div class="pg-container dark">
+	<div class="container" id="home-bottom">
+		<div class="row">
+			<div class="span3">
+				<h4 class="white"><i class="icon-screenshot icon-heading red"></i>Recent Updates</h4>
+				<% for post in @latest_posts %>
+					<h5 class="hm-post-title"><%= link_to post.title, post %></h5>
+					<small class="post-detail"><%= "Posted by " + "#{post.blog.name}" + " on " + "#{post.created_at.strftime("%b %-d")}" %></small>
+				<% end %>
+			</div>
+			
+			<div class="span5">
+				<h4 class="white"><i class="icon-screenshot icon-heading red"></i>Partner With Us</h4>
+				<p class="padr20 ddd">This London project is an opportunity for uall to partner in the work of the kingdom, a chance to invest in the spreading of the gospel to "the nations" that congregate in London.</p>
+				<p><%= link_to "Learn More", pages_support_path, class: "btn btn-small" %></p>
+			</div>
+			<div class="span4">
+				<h4 class="white"><i class="icon-envelope icon-heading red"></i>Join Our Mailing List</h4>
+				<!-- Begin MailChimp Signup Form -->
+<!--link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style> -->
+<div id="mc_embed_signup">
+<form action="http://facebook.us5.list-manage.com/subscribe/post?u=61ba4c92ba9f53d420316b8fd&amp;id=ea207340d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<label for="mce-EMAIL"></label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-small"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pg-container black">
+	<div class="container ft-container">
+		<p class="footer-text">Mission To the World - Presbyterian Church In America</p>
+	</div>
+</div>

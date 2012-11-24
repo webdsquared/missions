@@ -1,0 +1,55 @@
+<%= provide(:title, "Our Mission") %>		
+<%= render "partials/hdr" %>
+<div class="pg-container bg-white">
+
+	<div class="container">
+		<div id="secondary-pg-title">
+			<div class="row">
+				<div class="span1">
+					<%= image_tag("uk-map.jpg", size: "66x100") %>
+				</div>
+				<div class="span11">
+					<h2 class="sec-title">About Our Mission</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="mission-pg">
+			<div class="row">
+				<div class="span7">
+					<h3 class="about-page">The Vision</h3>
+					<p>The call to London is to work with existing church planters and partner ministries. We will begin our ministry in various parts of the city, many of them diverse ethnically. We will begin helping to mentor, train, and educate these church planters as well as assisting our national partners in recruiting, training new church planters for London.</p>
+					<h3 class="about-page">The Need</h3>
+					<p>In the last 50 years, the geographic center of Christianity has moved South and East. <em class="red">In the UK and on the European continent, what we historically call "Christendom," the home of vital and missional Christianity for centuries, Christianity is dying.</em> In the UK, the evangelical population amounts to about 2% of the entire population, demonstrating the dire need for evangelism through church planting.</p>
+					<h3 class="about-page">Our Goals</h3>
+					<h5 class="red goal-title">Goal One</h5>
+					<p>Develop mentoring relationships with local church planters, helping them to minister effectively to their neighborhoods, seeing new converts and participating in life-giving ministries of mercy, teaching, and evangelism.</p>
+					<h5 class="red goal-title">Goal Two</h5>
+					<p>Assist in identifying men to lead future church plants.</p>
+					<h5 class="red goal-title">Goal Three</h5>
+					<p>Because London is the home of vast ethnic communities, we want to see nationals from many countries around the world evangelized, trained, and sent back to their home countries as evangelists and church planters.</p>
+				</div>
+				<div class="span4 offset1">
+					<div id="mission-side-container">
+						<div id="mission-pg-church-list">
+						<h4 class="about-page">Partnering Churches</h4>
+							<ul>
+								<% for church in @churches %>
+									<li><%= link_to "#{church.name}" + " - " "#{church.city}" + ", " + "#{church.state}", church.link, target: "_blank" %></li>		
+								<% end %>		
+							</ul>
+						</div>
+						<h4 class="about-page">Partner with Us</h4>
+						<p>This London project is an opportunity for all to partner in the work of the kingdom, a chance to invest in spreading the gospel to "the nations" that congregate in London.</p>
+						<p>Would you consider partnering with us?</p>
+						<p><%= link_to "Learn More", pages_support_path, class: "btn btn-small" %></p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%= render "partials/ftr" %>				
