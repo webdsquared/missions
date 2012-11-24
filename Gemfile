@@ -24,9 +24,9 @@ end
 gem 'jquery-rails'
 #gem 'kaminari'
 #gem 'friendly_id'
-#gem 'mini_magick'
-#gem 'carrierwave'
-#gem 'redactor-rails'
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'redactor-rails'
 #gem 'bootstrap_kaminari'
 
 # To use ActiveModel has_secure_password

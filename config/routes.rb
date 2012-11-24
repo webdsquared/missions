@@ -1,4 +1,8 @@
 Missions::Application.routes.draw do
+  mount RedactorRails::Engine => '/redactor_rails'
+
+  resources :posts
+
   resources :blogs
 
   get "pages/home"
