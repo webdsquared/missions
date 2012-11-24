@@ -1,4 +1,6 @@
 Missions::Application.routes.draw do
+  resources :contacts
+
   resources :churches
 
   resources :categories
