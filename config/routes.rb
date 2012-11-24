@@ -1,4 +1,14 @@
 Missions::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/links"
+
+  get "pages/missions"
+
+  get "pages/support"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
