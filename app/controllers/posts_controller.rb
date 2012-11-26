@@ -2,7 +2,16 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.search(params[:search])
+    if @posts.class == Array
+      @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(2)
+    else
+      @posts = @posts.page(params[:page]).per(3)
+    end
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
+    @side_posts = Post.order("published_on desc").limit(7)
+    @all_categories = Category.order("name ASC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +23,10 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
+    @side_posts = Post.order("published_on desc").limit(7)
+    @all_categories = Category.order("name ASC")
 
     respond_to do |format|
       format.html # show.html.erb
@@ -79,5 +92,13 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url }
       format.json { head :no_content }
     end
+  end
+
+  def category
+    @posts = Post.find(:all, include: [:categories], conditions: ["categories.id = ?", params[:id]])
+    @blog_list = Blog.order("name ASC")
+    @latest_posts = Post.order("created_at DESC").limit(3)
+    @all_categories = Category.order("name ASC")
+    @side_posts = Post.order("published_on desc").limit(7)
   end
 end

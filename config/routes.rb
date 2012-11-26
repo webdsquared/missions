@@ -1,5 +1,9 @@
 Missions::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   match "contact" => 'contacts#new', as: "contact"
   resources :contacts
 
@@ -9,6 +13,7 @@ Missions::Application.routes.draw do
 
   mount RedactorRails::Engine => '/redactor_rails'
 
+  match "posts/category" => "posts#category"
   resources :posts
 
   resources :blogs

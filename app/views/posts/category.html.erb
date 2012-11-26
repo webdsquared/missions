@@ -1,8 +1,7 @@
-<%= provide(:title, "Blog") %>		
-<%= render "partials/hdr" %>		
+<%= provide(:title, "Blog") %>
+<%= render "partials/hdr" %>
 
 <div class="pg-container bg-white">
-	
 	<div class="container">
 		<div id="secondary-pg-title">
 			<div class="row">
@@ -10,7 +9,7 @@
 					<%= image_tag("uk-map.jpg", size: "66x100") %>
 				</div>
 				<div class="span11">
-					<h2 class="sec-title"><%= "Latest Updates from " + "#{@blog.name}" %></h2>
+					<h2 class="sec-title">Oh, the Places You'll Go Blog</h2>
 				</div>
 			</div>
 		</div>
@@ -20,8 +19,8 @@
 		<div id="posts-container">
 			<div class="row">
 				<div class="span9">
-					<% if @blog.posts.blank? %>
-						<h4>Sorry, <%= @blog.name %> currently has no viewable posts.
+					<% if @posts.blank? %>
+						<h4>Sorry, no posts found.
 					<% else %>
 					<% for post in @posts %>
 						<div class="post">
@@ -30,11 +29,10 @@
 								</div>
 								<div class="span8">
 									<div class="post-main">
-										<h2 class="blog-post-title"><%= link_to post.title, post %></h2>
-										<em><p class="blog-detail">Posted by <%= link_to @blog.name, blog_path %> on <%= post.published_on.strftime("%b %-d") %> |
+										<h2 class="blog-post-title"><%= link_to 	post.title, post %></h2>
+										<em><p class="blog-detail">Posted by on <%= post.published_on.strftime("%b %-d") %> |
 										Category:
 										<%= post.categories.collect { |cat| cat.name }.join(", ") %>		
-										
 										</p></em>
 										<%= sanitize post.body %>
 										
@@ -43,12 +41,8 @@
 							</div>
 						</div>
 					<% end %>
-
-					<% end %>	
-
+					<% end %>
 					<%= paginate @posts %>		
-							
-												
 				</div>
 				<div class="span3">
 					<div id="search-container">
@@ -76,8 +70,9 @@
 						</ul>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</div>		
 <%= render "partials/ftr" %>		
