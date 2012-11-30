@@ -29,7 +29,7 @@
                 <div class="span8">
                   <div class="post-main">
                     <h2 class="blog-post-title"><%= link_to post.title, post %></h2>
-                    <em><p class="blog-detail">Posted on <%= post.published_on.strftime("%b %-d") %> by <%= link_to post.blog.name, post.blog %> |
+                    <em><p class="blog-detail">Posted by <%= link_to post.blog.name, post.blog %> on <%= post.published_on.strftime("%B %-d, %Y") %>  |
                     Category:
                 <%= post.categories.collect { |cat|  cat.name }.join(", ") %></p></em>
                     <%= sanitize post.body %>
@@ -37,7 +37,6 @@
                 </div>
               </div>
             </div>
-            <p><%= link_to "Delete Post", post, method: :delete %></p>
           <% end %>  
           <% end %>
           <%= paginate @posts %>        

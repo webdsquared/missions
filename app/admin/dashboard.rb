@@ -2,14 +2,32 @@ ActiveAdmin.register_page "Dashboard" do
 
   menu :priority => 1, :label => proc{ I18n.t("active_admin.dashboard") }
 
-  content :title => proc{ I18n.t("active_admin.dashboard") } do
-    div :class => "blank_slate_container", :id => "dashboard_default_message" do
-      span :class => "blank_slate" do
-        span "Welcome to Active Admin. This is the default dashboard page."
-        small "To add dashboard sections, checkout 'app/admin/dashboards.rb'"
-      end
+ content :title => proc{ I18n.t("active_admin.dashboard") } do
+ #  div :class => "blank_slate_container", :id => "dashboard_default_message" do
+ #    span :class => "blank_slate" do
+ #      span "Welcome to Active Admin. This is the default dashboard page."
+ #      small "To add dashboard sections, checkout 'app/admin/dashboards.rb'"
+ #    end
+ #  end
+
+
+    section h2 "Recent Posts" do
+        table_for Post.order("created_at desc").limit(7) do
+            column :title do |post|
+                link_to post.title, admin_post_path(post)
+            end
+            column :blog
+            column :status
+            column :published_on
+        end
+        strong { link_to "View All Posts", admin_posts_path }
+        strong { link_to "Add New Post", new_admin_post_path }
+        br 
+        br
+
     end
 
+    
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do

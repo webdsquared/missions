@@ -13,6 +13,8 @@ body.active_admin form.formtastic .redactor_box {
   min-height: 300px;
 }
 
+
+
 // SASS variable overrides must be declared before loading up Active Admin's styles.
 //
 // To view the variables that Active Admin provides, take a look at
@@ -33,6 +35,8 @@ body.active_admin form.formtastic .redactor_box {
 //      .status_tag { background: #6090DB; }
 //   }
 //
+
+
 // Notice that Active Admin CSS rules are nested within a
 // 'body.active_admin' selector to prevent conflicts with
 // other pages in the app. It is best to wrap your changes in a 
@@ -42,3 +46,5 @@ body.active_admin form.formtastic .redactor_box {
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
+
+

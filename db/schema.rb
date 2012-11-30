@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121126042412) do
+ActiveRecord::Schema.define(:version => 20121129040130) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -50,7 +50,10 @@ ActiveRecord::Schema.define(:version => 20121126042412) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "slug"
   end
+
+  add_index "blogs", ["slug"], :name => "index_blogs_on_slug"
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -85,6 +88,13 @@ ActiveRecord::Schema.define(:version => 20121126042412) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "links", :force => true do |t|
+    t.string   "name"
+    t.string   "link"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "body"
@@ -93,7 +103,10 @@ ActiveRecord::Schema.define(:version => 20121126042412) do
     t.integer  "blog_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "slug"
   end
+
+  add_index "posts", ["slug"], :name => "index_posts_on_slug"
 
   create_table "redactor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false

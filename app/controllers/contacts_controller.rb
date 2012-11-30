@@ -3,6 +3,8 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     @contacts = Contact.all
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +16,8 @@ class ContactsController < ApplicationController
   # GET /contacts/1.json
   def show
     @contact = Contact.find(params[:id])
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -42,22 +46,25 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
+     @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
     @contact = Contact.new(params[:contact])
-
-    respond_to do |format|
+   
+    
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render json: @contact, status: :created, location: @contact }
+        ContactMailer.contact_notification(@contact).deliver
+        redirect_to contacted_path
       else
-        format.html { render action: "new" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
+        render "new"
       end
-    end
+    
   end
 
   # PUT /contacts/1
   # PUT /contacts/1.json
   def update
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
     @contact = Contact.find(params[:id])
 
     respond_to do |format|
@@ -82,4 +89,11 @@ class ContactsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def thanks 
+    @blog_list = Blog.order("name asc")
+    @latest_posts = Post.order("published_on desc").limit(4)
+  end
+    
+  
 end

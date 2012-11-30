@@ -26,7 +26,7 @@
             <div class="span8">
               <div class="post-main">
                 <h2 class="blog-post-title"><%= @post.title %></h2>
-                <em><p class="blog-detail">Posted by <%= @post.blog %> on <%= @post.published_on.strftime("%b %-d") %> |
+                <em><p class="blog-detail">Posted by <%= link_to @post.blog.name, @post.blog %> on <%= @post.published_on.strftime("%B %-d, %Y") %> |
                 Category:
                 <%= @post.categories.collect { |cat|  cat.name }.join(", ") %>          
                 </p></em>

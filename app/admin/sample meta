@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <meta content="Adobe InDesign" name="generator" />
+    <meta name="cover" content="seven_cover.jpg" />
+    <dc:title>The 7 Experiment</dc:title>
+    <dc:creator>Jen Hatmaker</dc:creator>
+    <dc:subject>9781430002772</dc:subject>
+    <dc:subject>Excess</dc:subject>
+    <dc:subject>005569100</dc:subject>
+    <dc:subject>Materialism</dc:subject>
+    <dc:subject>Greed</dc:subject>
+    <dc:subject>LifeWay</dc:subject>
+    <dc:description>American life can be excessive, to say the least. That’s what Jen Hatmaker had to admit after taking in hurricane victims who commented on the extravagance of her family’s upper middle class home. She once considered herself unmotivated by the lure of prosperity, but upon being called “rich” by an undeniably poor child, evidence to the contrary mounted, and a social experiment turned spiritual was born. 7 is the true story of how Jen (along with her husband and her children to varying degrees) took seven months, identified seven areas of excess, and made seven simple choices to fight back against the modern-day diseases of greed, materialism, and overindulgence.</dc:description>
+    <dc:publisher>LifeWay Press</dc:publisher>
+    <dc:date>2012-11-16</dc:date>
+    <dc:source />
+    <dc:relation />
+    <dc:coverage />
+    <dc:rights>2012 Jen Hatmaker</dc:rights>
+    <dc:language>en-US</dc:language>
+    <dc:identifier id="bookid">urn:uuid:6701FD8A-91E7-492A-A479-4F0CC1CA41F7</dc:identifier>
+    <dc:identifier>9781430002772</dc:identifier>
+    <meta content="0.6.0" name="Sigil version" />
+    <dc:date xmlns:opf="http://www.idpf.org/2007/opf" opf:event="modification">2012-11-29</dc:date>
+  </metadata>
+  <manifest>
+    <item href="Text/CoverImage.xhtml" id="CoverImage" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6.xhtml" id="x7_JenHatmaker_Pages_CS6" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-1.xhtml" id="x7_JenHatmaker_Pages_CS6-1" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-2.xhtml" id="x7_JenHatmaker_Pages_CS6-2" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-3.xhtml" id="x7_JenHatmaker_Pages_CS6-3" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-4.xhtml" id="x7_JenHatmaker_Pages_CS6-4" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-5.xhtml" id="x7_JenHatmaker_Pages_CS6-5" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-6.xhtml" id="x7_JenHatmaker_Pages_CS6-6" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-7.xhtml" id="x7_JenHatmaker_Pages_CS6-7" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-8.xhtml" id="x7_JenHatmaker_Pages_CS6-8" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-9.xhtml" id="x7_JenHatmaker_Pages_CS6-9" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-10.xhtml" id="x7_JenHatmaker_Pages_CS6-10" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-11.xhtml" id="x7_JenHatmaker_Pages_CS6-11" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-12.xhtml" id="x7_JenHatmaker_Pages_CS6-12" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-13.xhtml" id="x7_JenHatmaker_Pages_CS6-13" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-14.xhtml" id="x7_JenHatmaker_Pages_CS6-14" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-15.xhtml" id="x7_JenHatmaker_Pages_CS6-15" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-16.xhtml" id="x7_JenHatmaker_Pages_CS6-16" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-17.xhtml" id="x7_JenHatmaker_Pages_CS6-17" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-18.xhtml" id="x7_JenHatmaker_Pages_CS6-18" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-19.xhtml" id="x7_JenHatmaker_Pages_CS6-19" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-20.xhtml" id="x7_JenHatmaker_Pages_CS6-20" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-21.xhtml" id="x7_JenHatmaker_Pages_CS6-21" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-22.xhtml" id="x7_JenHatmaker_Pages_CS6-22" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-23.xhtml" id="x7_JenHatmaker_Pages_CS6-23" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-24.xhtml" id="x7_JenHatmaker_Pages_CS6-24" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-25.xhtml" id="x7_JenHatmaker_Pages_CS6-25" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-26.xhtml" id="x7_JenHatmaker_Pages_CS6-26" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-27.xhtml" id="x7_JenHatmaker_Pages_CS6-27" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-28.xhtml" id="x7_JenHatmaker_Pages_CS6-28" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-29.xhtml" id="x7_JenHatmaker_Pages_CS6-29" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-30.xhtml" id="x7_JenHatmaker_Pages_CS6-30" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-31.xhtml" id="x7_JenHatmaker_Pages_CS6-31" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-32.xhtml" id="x7_JenHatmaker_Pages_CS6-32" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-33.xhtml" id="x7_JenHatmaker_Pages_CS6-33" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-34.xhtml" id="x7_JenHatmaker_Pages_CS6-34" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-35.xhtml" id="x7_JenHatmaker_Pages_CS6-35" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-36.xhtml" id="x7_JenHatmaker_Pages_CS6-36" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-37.xhtml" id="x7_JenHatmaker_Pages_CS6-37" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-38.xhtml" id="x7_JenHatmaker_Pages_CS6-38" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-39.xhtml" id="x7_JenHatmaker_Pages_CS6-39" media-type="application/xhtml+xml" />
+    <item href="Text/7_JenHatmaker_Pages_CS6-40.xhtml" id="x7_JenHatmaker_Pages_CS6-40" media-type="application/xhtml+xml" />
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+    <item href="Styles/9781430002772.css" id="x9781430002772.css" media-type="text/css" />
+    <item href="Images/4_Possessions_fmt.jpeg" id="x4_Possessions_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7p23_fmt.png" id="x7p23_fmt.png" media-type="image/png" />
+    <item href="Images/7_52_Dress-Shoes_fmt.jpeg" id="x7_52_Dress-Shoes_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_56_Credit_Cards_fmt.jpeg" id="x7_56_Credit_Cards_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_60_Accessorise_me_fmt.jpeg" id="x7_60_Accessorise_me_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_72_Money_Bags_fmt.jpeg" id="x7_72_Money_Bags_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_7_fmt.jpeg" id="x7_7_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Calendar_fmt.jpeg" id="x7_Calendar_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Cel_fmt.jpeg" id="x7_Cel_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Check_fmt.jpeg" id="x7_Check_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_fridge_fmt.png" id="x7_fridge_fmt.png" media-type="image/png" />
+    <item href="Images/7_Game_Controller_fmt.jpeg" id="x7_Game_Controller_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Lamp_fmt.jpeg" id="x7_Lamp_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Money_bag2_fmt.jpeg" id="x7_Money_bag2_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_NOT_Quac_fmt.jpeg" id="x7_NOT_Quac_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_recycle_tub_fmt.jpeg" id="x7_recycle_tub_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Running_Shoes_fmt.jpeg" id="x7_Running_Shoes_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Salad_fmt.png" id="x7_Salad_fmt.png" media-type="image/png" />
+    <item href="Images/7_tablet_fmt.jpeg" id="x7_tablet_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/7_Trash_fmt.png" id="x7_Trash_fmt.png" media-type="image/png" />
+    <item href="Images/7_TV_fmt.jpeg" id="x7_TV_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/seven_cover.jpg" id="seven_cover.jpg" media-type="image/jpeg" />
+    <item href="Images/seven_cover_fmt.jpeg" id="seven_cover_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/seven_hatmakers_fmt.jpeg" id="seven_hatmakers_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/seven_title_pg_fmt.jpeg" id="seven_title_pg_fmt.jpeg" media-type="image/jpeg" />
+    <item href="Images/week1_fmt.png" id="week1_fmt.png" media-type="image/png" />
+    <item href="Images/week2_fmt.png" id="week2_fmt.png" media-type="image/png" />
+    <item href="Images/week3_fmt.png" id="week3_fmt.png" media-type="image/png" />
+    <item href="Images/week4_fmt.png" id="week4_fmt.png" media-type="image/png" />
+    <item href="Images/week5_fmt.png" id="week5_fmt.png" media-type="image/png" />
+    <item href="Images/week6_fmt.png" id="week6_fmt.png" media-type="image/png" />
+    <item href="Images/week7_fmt.png" id="week7_fmt.png" media-type="image/png" />
+    <item href="Images/week8_fmt.png" id="week8_fmt.png" media-type="image/png" />
+    <item href="Images/week9_fmt.png" id="week9_fmt.png" media-type="image/png" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="CoverImage" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-1" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-2" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-3" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-4" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-5" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-6" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-7" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-8" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-9" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-10" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-11" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-12" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-13" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-14" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-15" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-16" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-17" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-18" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-19" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-20" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-21" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-22" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-23" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-24" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-25" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-26" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-27" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-28" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-29" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-30" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-31" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-32" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-33" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-34" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-35" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-36" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-37" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-38" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-39" />
+    <itemref idref="x7_JenHatmaker_Pages_CS6-40" />
+  </spine>
+</package>

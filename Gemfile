@@ -24,7 +24,7 @@ end
 gem 'activeadmin'
 gem 'jquery-rails'
 gem 'kaminari'
-#gem 'friendly_id'
+gem 'friendly_id'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'redactor-rails'

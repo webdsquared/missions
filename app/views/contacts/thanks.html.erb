@@ -1,0 +1,40 @@
+<%= provide(:title, "Thanks for Contacting Us") %>
+
+<%= render "partials/hdr" %>
+
+<div class="pg-container bg-white">
+	
+	<div class="container">
+		<div id="secondary-pg-title">
+			<div class="row">
+				<div class="span1">
+					<%= image_tag("uk-map.jpg", size: "66x100") %>
+				</div>
+				<div class="span11">
+					<h2 class="sec-title">We've got mail!</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="thanks-pg">
+			<div class="row">
+				<div class="span2">&nbsp;</div>
+				<div class="span8">
+					<center>
+						<h1 class="red">Your message has been sent.</h2>
+						<%= image_tag "mailbox.png" %>
+						<h2 class="red">Thank you so much for touching base with us.  We look forward to following up with you!</h2>
+					</center>
+				</div>
+				<div class="span2">&nbsp;</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+</div>
+
+<%= render "partials/ftr" %>

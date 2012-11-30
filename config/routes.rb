@@ -1,9 +1,12 @@
 Missions::Application.routes.draw do
 
+  resources :links
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
+  match "contact/thank-you" => 'contacts#thanks', as: "contacted"
   match "contact" => 'contacts#new', as: "contact"
   resources :contacts
 
@@ -18,14 +21,17 @@ Missions::Application.routes.draw do
 
   resources :blogs
 
+
   get "pages/home"
 
+  match "about" => "pages#about", as: "pages_about"
   get "pages/about"
 
-  get "pages/links"
 
+  match "mission" => "pages#mission", as: "pages_mission"
   get "pages/mission"
 
+  match "support" => "pages#support", as: "pages_support"
   get "pages/support"
 
   # The priority is based upon order of creation:

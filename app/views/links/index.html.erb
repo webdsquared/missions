@@ -1,0 +1,61 @@
+<%= provide(:title, "Links") %>
+<%= render "partials/hdr" %>
+
+<div class="pg-container bg-white">
+  <div class="container">
+    <div id="secondary-pg-title">
+      <div class="row">
+        <div class="span1">
+          <%= image_tag("uk-map.jpg", size: "66x100") %>
+        </div>
+        <div class="span11">
+          <h2 class="sec-title">Some places we recommend you visit...</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="links-pg">
+      <div class="row">
+        <div class="span1">&nbsp;</div>
+        <div class="span5">
+          <div class="links-div">
+            <h4>Our mission sending organization:</h4>
+            <p><%= link_to "Mission To the World", "http://mtw.org" %></p>
+          </div>
+          <div class="links-div">
+            <h4>Our denomination:</h4>
+            <p><%= link_to "Presbyterian Church In America", "http://pcanet.org" %></p>
+          </div>
+          <div class="links-div">
+            <h4>Other Links</h4>
+            
+            <ul>
+              <% for link in @links %>
+              <li><%= link_to link.name, link.link, target: "_blank" %></li>
+              <% end %>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="span1">&nbsp;</div>
+        <div class="span5">
+          <div id="partnering-list">
+            <h4>Parterning Churches:</h4>
+            <ul>
+              <% for church in @churches %>
+              <li><%= link_to "#{church.name + " - " + church.city + ", " + church.state}", church.link, target: "_blank" %></li>
+              <% end %>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%= render "partials/ftr" %>
+

@@ -29,7 +29,9 @@
 					<div id="partnering-list">
 						<h4>Parterning Churches:</h4>
 						<ul>
-							<li><%= link_to "Parish Presbyterian - Franklin, TN", "http://parishpres.org", target: "_blank" %></li>
+							<% for church in @churches %>
+							<li><%= link_to "#{church.name + " - " + church.city + ", " + church.state}", church.link, target: "_blank" %></li>
+							<% end %>
 						</ul>
 					</div>
 				</div>

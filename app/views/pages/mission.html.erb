@@ -33,18 +33,19 @@
 				</div>
 				<div class="span4 offset1">
 					<div id="mission-side-container">
-						<div id="mission-pg-church-list">
-						<h4 class="about-page">Partnering Churches</h4>
-							<ul>
-								<% for church in @churches %>
-									<li><%= link_to "#{church.name}" + " - " "#{church.city}" + ", " + "#{church.state}", church.link, target: "_blank" %></li>		
-								<% end %>		
-							</ul>
-						</div>
 						<h4 class="about-page">Partner with Us</h4>
 						<p>This London project is an opportunity for all to partner in the work of the kingdom, a chance to invest in spreading the gospel to "the nations" that congregate in London.</p>
 						<p>Would you consider partnering with us?</p>
 						<p><%= link_to "Learn More", pages_support_path, class: "btn btn-small" %></p>
+						<div id="mission-pg-church-list">
+						<h4 class="about-page">Partnering Churches</h4>
+							<ul>
+								<% for church in @churches %>
+							<li><%= link_to "#{church.name + " - " + church.city + ", " + church.state}", church.link, target: "_blank" %></li>
+							<% end %>		
+							</ul>
+						</div>
+						
 						
 					</div>
 				</div>

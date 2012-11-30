@@ -4,13 +4,13 @@ class PostsController < ApplicationController
   def index
     @posts = Post.search(params[:search])
     if @posts.class == Array
-      @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(2)
+      @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(4)
     else
-      @posts = @posts.page(params[:page]).per(3)
+      @posts = @posts.page(params[:page]).per(4)
     end
     @blog_list = Blog.order("name asc")
     @latest_posts = Post.order("published_on desc").limit(4)
-    @side_posts = Post.order("published_on desc").limit(7)
+    @side_posts = Post.where('status == ? AND published_on <= ?', "Published", Date.today).order("published_on desc").limit(10)
     @all_categories = Category.order("name ASC")
 
     respond_to do |format|
@@ -95,10 +95,15 @@ class PostsController < ApplicationController
   end
 
   def category
-    @posts = Post.find(:all, include: [:categories], conditions: ["categories.id = ?", params[:id]])
+    @posts = Post.search(params[:search])
+    if @posts.class == Array
+      @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(4)
+    else
+      @posts = @posts.page(params[:page]).per(4)
+    end
     @blog_list = Blog.order("name ASC")
-    @latest_posts = Post.order("created_at DESC").limit(3)
+    @latest_posts = Post.order("created_at DESC").limit(4)
     @all_categories = Category.order("name ASC")
-    @side_posts = Post.order("published_on desc").limit(7)
+    @side_posts = Post.order("published_on desc").limit(10)
   end
 end
