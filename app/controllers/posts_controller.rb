@@ -25,7 +25,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @blog_list = Blog.order("name asc")
     @latest_posts = Post.order("published_on desc").limit(4)
-    @side_posts = Post.order("published_on desc").limit(7)
+    @side_posts = Post.where('status == ? AND published_on <= ?', "Published", Date.today).order("published_on desc").limit(10)
     @all_categories = Category.order("name ASC")
 
     respond_to do |format|
@@ -104,6 +104,6 @@ class PostsController < ApplicationController
     @blog_list = Blog.order("name ASC")
     @latest_posts = Post.order("created_at DESC").limit(4)
     @all_categories = Category.order("name ASC")
-    @side_posts = Post.order("published_on desc").limit(10)
+    @side_posts = Post.where('status == ? AND published_on <= ?', "Published", Date.today).order("published_on desc").limit(10)
   end
 end
