@@ -1,0 +1,45 @@
+<% provide(:title, "FAQ") %>
+<%= render "partials/hdr" %>
+<div class="pg-container bg-white">
+	<div class="container">
+    <div id="secondary-pg-title">
+      <div class="row">
+        <div class="span1">
+          <%= image_tag("uk-map.jpg", size: "66x100") %>
+        </div>
+        <div class="span11">
+          <h2 class="sec-title">Question you might have...</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+  	<div class="faq-pg">
+  		<div class="row">
+  			<div class="span9">
+  				<% if @questions.present? %>
+  				<% for question in @questions %>
+  					<div class="faq-question">
+  						<h3 class="red"><%= question.question %></h3>
+  						<p><%= question.answer %></p>
+  					</div>
+  				<% end %>
+  				<% else %>
+  					<h4>No questions added.</h4>
+  				<% end %>
+
+  			</div>
+  			<div class="span3">
+  				<h4>Have more questions?</h4>
+  				<p>We would be happy to answer any questions you may have.  You can contact us <%= link_to "online", contact_path %>, or contact us at the email addresses below.</p>
+  				<p><%= mail_to "binginlondon@gmail.com", "binginlondon@gmail.com" %><br>
+  					<%= mail_to "stacyinlondon@gmail.com", "stacyinlondon@gmail.com" %></p>
+
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+</div>
+<%= render "partials/ftr" %>

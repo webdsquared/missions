@@ -1,6 +1,10 @@
 Missions::Application.routes.draw do
 
+  
+
   resources :links
+  match "faq" => "questions#index"
+  resources :questions
 
   ActiveAdmin.routes(self)
 

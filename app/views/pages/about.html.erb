@@ -7,7 +7,7 @@
 		<div id="secondary-pg-title">
 			<div class="row">
 				<div class="span1">
-					<%= image_tag("uk-map.jpg", size: "66x100") %>
+					<%= image_tag("uk-map.jpg", :size => "66x100") %>
 				</div>
 				<div class="span11">
 					<h2 class="sec-title">A little more of our story...</h2>
@@ -20,17 +20,22 @@
 		<div id="about-pg">
 			<div class="row">
 				<div class="span8">
+					<div id="about-content">
 					<h3 class="about-page">Unlikely Missionaries</h3>
-					<p>We are unlikely missionaries. But as we were approaching an empty nest, God began to take us on a journey of adventure and even deeper dependence on him. In January 2012, Bing badly broke his knee, spending several months unable to walk while recoving.</p>
-					<p>With plenty of time to think and pray, and an 'accidental encounter' with a missionary during that time, we found our hearts being curiously drawn to cross-cultural ministry for the first time ever. After eight months of process with Mission To the World (MTW), we find ourselves fully approved and headed to the mission field.</p>
-					<p>Would you consider partnering with us?</p>
-					<p><%= link_to "Learn More", pages_support_path, class: "btn btn-small" %></p>
+						<p>We are unlikely missionaries. But as we were approaching an empty nest, God began to take us on a journey of adventure and even deeper dependence on 	him. In January 2012, Bing badly broke his knee, spending several months unable to walk while recoving.</p>
+						<p>With plenty of time to think and pray, and an 'accidental encounter' with a missionary during that time, we found our hearts being curiously drawn to 	cross-cultural ministry for the first time ever. After eight months of process with Mission To the World (MTW), we find ourselves fully approved and 	headed to the mission field.</p>
+						<p>We have three fabulous, somewhat-grown children, who will not be moving to London with us. <strong>Will</strong>, age 23, will graduate from the 	University of Tennessee in teh Spring with a degree in Political Science and minor in German. <strong>Logan</strong>, age 22, will graduate from New 	College Franklin, a small classical college, in the Spring, then is getting married shortly thereafter. We also have <strong>Kate</strong>, age 18, who 	entered the University of Pennsylvania School of Nursing with past September. Will worked in London a few years back for about 10 months, working in 	daily ministry in the same place we will be living. Kate will go work in London at the same place as Will, doing summer outreach in the summer of 2013. 	Logan can give a great literary-historical guided tour of London as well, so as you cam see, London is a place much-loved by us as a family.</p>
+	
+						<p>Would you consider partnering with us?</p>
+	
+						<p><%= link_to "Learn More", pages_support_path, :class => "btn btn-small" %></p>
+					</div>
 					<br>
 					<div id="partnering-list">
 						<h4>Parterning Churches:</h4>
 						<ul>
 							<% for church in @churches %>
-							<li><%= link_to "#{church.name + " - " + church.city + ", " + church.state}", church.link, target: "_blank" %></li>
+							<li><%= link_to "#{church.name + " - " + church.city + ", " + church.state}", church.link, :target => "_blank" %></li>
 							<% end %>
 						</ul>
 					</div>
@@ -38,8 +43,6 @@
 				<div class="span4">
 					<div id="about-img-container">
 						<%= image_tag "bing-stacy-2.jpg" %>	
-						<div id="about-contact">
-						</div>
 					</div>
 				</div>
 			</div>
