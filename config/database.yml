@@ -29,6 +29,6 @@ production:
   database: missions_production
   encoding: unicode
   pool: 5
-  username: 
-  password:
+  username: deployer
+  password: h0lein0ne
   host: localhost 
