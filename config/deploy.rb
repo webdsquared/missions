@@ -13,10 +13,10 @@ set :repository, "https://github.com/webdsquared/#{application}.git"
 set :branch, "master"
 
 set :default_environment, {
-	'PATH' => "/usr/local/.rvm/gems/ruby-1.9.3-p392/bin:/home/aaron/.rvm/gems/ruby-1.9.3-p392@global/bin:/home/aaron/.rvm/rubies/ruby-1.9.3-p392/bin:/home/aaron/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games",
+	'PATH' => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games",
 	'RUBY_VERSION' => '1.9.3p392',
 	'GEM_HOME' => '/usr/local/rvm/gems/ruby-1.9.3-p392',
-	'GEM_PATH' => '/usr/local/rvm/gems/ruby-1.9.3-p392:/home/aaron/.rvm/gems/ruby-1.9.3-p392@global'
+	'GEM_PATH' => '/usr/local/rvm/gems/ruby-1.9.3-p392:/usr/local/rvm/gems/ruby-1.9.3-p392@global'
 }
 
 default_run_options[:pty] = true
