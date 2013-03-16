@@ -31,4 +31,4 @@ production:
   pool: 5
   username: deployer
   password: h0lein0ne
-  # host: localhost 
+  host: localhost 
