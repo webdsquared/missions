@@ -67,5 +67,6 @@ production:
   database: missions_production
   pool: 5
   username: root
-  password: 
+  password: h0lein0ne
   host: localhost
+  socket: /tmp/mysql.sock
