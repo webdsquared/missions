@@ -64,8 +64,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: Base_production
+  database: missions_production
   pool: 5
   username: root
-  password:
+  password: h0lein0ne
   host: localhost#
