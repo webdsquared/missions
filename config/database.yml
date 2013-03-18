@@ -66,6 +66,6 @@ production:
   reconnect: false
   database: missions_production
   pool: 5
-  username: root
-  password: h0lein0ne
-  host: localhost#
+  username: deployer
+  #password: h0lein0ne
+  host: localhost
