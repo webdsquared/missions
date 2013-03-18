@@ -67,5 +67,5 @@ production:
   database: missions_production
   pool: 5
   username: deployer
-  #password: h0lein0ne
+  password: h0lein0ne
   host: localhost
