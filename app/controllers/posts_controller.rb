@@ -96,7 +96,7 @@ class PostsController < ApplicationController
 
   def category
     @posts = Post.search(params[:search])
-    if @posts.class == Array
+    if @posts.class = Array
       @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(4)
     else
       @posts = @posts.page(params[:page]).per(4)
