@@ -19,9 +19,9 @@ class Post < ActiveRecord::Base
 
   def self.search(search)
   	if search
-  		find(:all, conditions: ['title || body LIKE ?', "%#{search}%"], conditions: ['status == ? AND published_on <= ?', "Published", Date.today], order: "published_on DESC")
+  		find(:all, conditions: ['title || body LIKE ?', "%#{search}%"], conditions: ['status = ? AND published_on <= ?', "Published", Date.today], order: "published_on DESC")
   	else
-  		find(:all, conditions: ['status == ? AND published_on <= ?', "Published", Date.today], order: "published_on DESC")
+  		find(:all, conditions: ['status = ? AND published_on <= ?', "Published", Date.today], order: "published_on DESC")
   	end
   end
 
