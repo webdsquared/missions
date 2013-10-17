@@ -31,6 +31,8 @@ gem 'redactor-rails'
 gem 'bootstrap_kaminari'
 gem 'therubyracer'
 
+gem 'newrelic_rpm'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
